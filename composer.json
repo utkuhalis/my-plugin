@@ -34,7 +34,7 @@
         ],
         "migrate": [
             "php spark migrate",
-            "php spark migrate -n Plugins\MyPlugin\"
+            "php spark migrate -n Plugins\\MyPlugin\\"
         ]
     }
 }
