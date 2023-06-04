@@ -8,7 +8,7 @@ class MyPlugin
 {
     public function hello()
     {
-        return 'Merhaba, benim eklentim!';
+        return 'Merhaba, benim eklentim! 1.0.0';
     }
 
     public function install()
