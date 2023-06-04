@@ -42,11 +42,11 @@ class TMyPlugin extends Migration
         ]);
 
         $this->forge->addKey('id', true);
-        $this->forge->createTable('plugins_MyPlugin');
+        $this->forge->createTable('plugins_myplugin');
     }
 
     public function down()
     {
-        $this->forge->dropTable('plugins_MyPlugin');
+        $this->forge->dropTable('plugins_myplugin');
     }
 }
