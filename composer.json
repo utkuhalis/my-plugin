@@ -1,12 +1,26 @@
 {
     "name": "utkuhalis/my-plugin",
     "type": "codeigniter4-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Utku Halis",
+            "email": "personal@utkuhalis.com.tr"
+        }
+    ],
+    "description": "My Plugin",
     "require": {
+        "php": "^7.4",
         "codeigniter4/framework": "^4.1"
     },
     "autoload": {
         "psr-4": {
             "YourNamespace\\MyPlugin\\": "src/"
         }
-    }
+    },
+    "config": {
+		"lock": false,
+		"sort-packages": true,
+		"platform-check": true
+	}
 }
