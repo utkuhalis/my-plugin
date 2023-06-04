@@ -5,6 +5,7 @@
     "license": "MIT",
     "minimum-stability": "stable",
 	"type": "library",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Utku Halis",
