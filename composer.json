@@ -1,0 +1,12 @@
+{
+    "name": "utkuhalis/my-plugin",
+    "type": "codeigniter4-extension",
+    "require": {
+        "codeigniter4/framework": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "YourNamespace\\MyPlugin\\": "src/"
+        }
+    }
+}
