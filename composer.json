@@ -26,6 +26,9 @@
         "platform-check": true
     },
     "scripts": {
+        "post-install-cmd": [
+            "php spark migrate -all"
+        ],
         "post-update-cmd": [
             "php spark migrate -all"
         ]
