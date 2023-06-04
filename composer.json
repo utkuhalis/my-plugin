@@ -1,15 +1,16 @@
 {
     "name": "utkuhalis/my-plugin",
-    "type": "codeigniter4-extension",
+    "description": "My Plugin",
+    "homepage": "https://github.com/utkuhalis/my-plugin",
     "license": "MIT",
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
+	"type": "library",
     "authors": [
         {
             "name": "Utku Halis",
             "email": "personal@utkuhalis.com.tr"
         }
     ],
-    "description": "My Plugin",
     "require": {
         "php": "^7.4"
     },
