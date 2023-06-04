@@ -1,10 +1,10 @@
 <?php
 
-namespace YourNamespace\MyPlugin\Migrations;
+namespace Plugins\MyPlugin\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class CreateExampleTable extends Migration
+class TMyPlugin extends Migration
 {
     public function up()
     {
@@ -13,34 +13,40 @@ class CreateExampleTable extends Migration
                 'type' => 'INT',
                 'constraint' => 5,
                 'unsigned' => true,
-                'auto_increment' => true
+                'auto_increment' => true,
             ],
             'name' => [
                 'type' => 'VARCHAR',
-                'constraint' => '100',
-                'null' => false
+                'constraint' => 100,
+            ],
+            'surname' => [
+                'type' => 'VARCHAR',
+                'constraint' => 100,
+            ],
+            'phone' => [
+                'type' => 'VARCHAR',
+                'constraint' => 100,
             ],
             'email' => [
                 'type' => 'VARCHAR',
-                'constraint' => '255',
-                'null' => false
+                'constraint' => 100,
             ],
             'created_at' => [
                 'type' => 'DATETIME',
-                'null' => true
+                'null' => true,
             ],
             'updated_at' => [
                 'type' => 'DATETIME',
-                'null' => true
-            ]
+                'null' => true,
+            ],
         ]);
 
         $this->forge->addKey('id', true);
-        $this->forge->createTable('example');
+        $this->forge->createTable('plugins_MyPlugin');
     }
 
     public function down()
     {
-        $this->forge->dropTable('example');
+        $this->forge->dropTable('plugins_MyPlugin');
     }
 }

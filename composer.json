@@ -4,7 +4,7 @@
     "homepage": "https://github.com/utkuhalis/my-plugin",
     "license": "MIT",
     "minimum-stability": "stable",
-	"type": "library",
+    "type": "library",
     "version": "1.0.0",
     "authors": [
         {
@@ -17,12 +17,24 @@
     },
     "autoload": {
         "psr-4": {
-            "YourNamespace\\MyPlugin\\": "src/"
+            "Plugins\\MyPlugin\\": "src/"
         }
     },
     "config": {
-		"lock": false,
-		"sort-packages": true,
-		"platform-check": true
-	}
+        "lock": false,
+        "sort-packages": true,
+        "platform-check": true
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@migrate"
+        ],
+        "post-update-cmd": [
+            "@migrate"
+        ],
+        "migrate": [
+            "php spark migrate",
+            "php spark migrate -n Plugins\\MyPlugin\\"
+        ]
+    }
 }
