@@ -2,6 +2,7 @@
     "name": "utkuhalis/my-plugin",
     "type": "codeigniter4-extension",
     "license": "MIT",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Utku Halis",
