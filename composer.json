@@ -27,13 +27,10 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "@migrate"
+            "@php spark migrate -all"
         ],
         "post-update-cmd": [
-            "@migrate"
-        ],
-        "migrate": [
-            "php spark migrate -all"
+            "@php spark migrate -all"
         ]
     }
 }
