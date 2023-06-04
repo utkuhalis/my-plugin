@@ -33,7 +33,6 @@
             "@migrate"
         ],
         "migrate": [
-            "php spark migrate",
             "php spark migrate -all"
         ]
     }
