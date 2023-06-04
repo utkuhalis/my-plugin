@@ -10,8 +10,7 @@
     ],
     "description": "My Plugin",
     "require": {
-        "php": "^7.4",
-        "codeigniter4/framework": "^4.1"
+        "php": "^7.4"
     },
     "autoload": {
         "psr-4": {
